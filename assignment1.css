@@ -1,0 +1,605 @@
+/* =========================================
+   BASIC PAGE
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    color: #222;
+
+    background-color: white;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background-color: #0b2854;
+
+    color: white;
+
+    height: 70px;
+
+    padding: 8px 55px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* Name */
+
+.header-left h2 {
+    margin: 0;
+
+    font-size: 24px;
+}
+
+.header-left p {
+    margin: 5px 0 0;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    height: 100%;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    margin-left: 42px;
+
+    padding: 25px 0 18px;
+}
+
+nav a:hover {
+    color: #ffd21c;
+}
+
+nav a.active {
+    color: #ffd21c;
+
+    border-bottom: 4px solid #ffd21c;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+    background-color: #e8f4ff;
+
+    min-height: 305px;
+
+    padding: 25px 0;
+}
+
+
+.hero-content {
+    width: 80%;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* Hero Text */
+
+.hero-text {
+    width: 55%;
+}
+
+.hero-text h1 {
+    color: #172b4d;
+
+    font-size: 38px;
+
+    margin: 0 0 5px;
+}
+
+.hero-text h2 {
+    color: #1764ae;
+
+    font-size: 25px;
+
+    margin: 0 0 12px;
+}
+
+.hero-text p {
+    font-size: 17px;
+
+    line-height: 1.55;
+
+    margin: 0 0 15px;
+
+    max-width: 560px;
+}
+
+
+/* Download Button */
+
+.download-btn {
+    display: inline-block;
+
+    background-color: #0b2854;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 11px 28px;
+
+    border-radius: 3px;
+}
+
+.download-btn:hover {
+    background-color: #1764ae;
+}
+
+
+/* =========================================
+   PROFILE IMAGE
+========================================= */
+
+.profile-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 35%;
+}
+
+
+/*
+   Large circular image like the screenshot.
+*/
+
+.profile-image {
+    width: 260px;
+
+    height: 260px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 5px solid white;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.main-container {
+    width: 80%;
+
+    margin: 0 auto;
+
+    padding-top: 25px;
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.about-section h2,
+.skills-section h2,
+.education-section h2,
+.projects-section h2,
+.contact-section h2,
+.social-section h2 {
+    color: #182a45;
+
+    font-size: 21px;
+
+    margin-top: 0;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   TOP SECTION
+========================================= */
+
+.top-section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1.7fr;
+
+    gap: 38px;
+
+    margin-bottom: 30px;
+}
+
+
+/* About */
+
+.about-section p {
+    font-size: 15px;
+
+    line-height: 1.55;
+
+    margin-top: 0;
+}
+
+
+/* Skills */
+
+.skills-section ul {
+    padding-left: 20px;
+
+    margin-top: 0;
+
+    line-height: 1.55;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   EDUCATION TABLE
+========================================= */
+
+.education-section table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+}
+
+.education-section th,
+.education-section td {
+    border: 1px solid #d2d2d2;
+
+    padding: 10px;
+
+    text-align: left;
+}
+
+.education-section th {
+    background-color: #fafafa;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   BOTTOM SECTION
+========================================= */
+
+.bottom-section {
+    display: grid;
+
+    grid-template-columns: 1.7fr 1fr;
+
+    gap: 38px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   PROJECTS
+========================================= */
+
+.project-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.project-card {
+    border: 1px solid #d1d1d1;
+
+    border-radius: 5px;
+
+    padding: 12px;
+
+    min-height: 205px;
+}
+
+
+.project-card h3 {
+    font-size: 15px;
+
+    margin: 0 0 12px;
+
+    color: #222;
+}
+
+
+.project-card p {
+    font-size: 13px;
+
+    line-height: 1.55;
+
+    min-height: 95px;
+}
+
+
+.project-card a {
+    color: #1764ae;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.contact-section form {
+    width: 100%;
+}
+
+
+.contact-section label {
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+
+    border: 1px solid #d1d1d1;
+
+    padding: 8px;
+
+    margin-bottom: 10px;
+
+    border-radius: 2px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.contact-section textarea {
+    height: 60px;
+
+    resize: none;
+}
+
+
+/* Contact buttons */
+
+.form-buttons {
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.form-buttons button {
+    background-color: #0b2854;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 22px;
+
+    border-radius: 3px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.form-buttons button:hover {
+    background-color: #1764ae;
+}
+
+
+.form-buttons .reset-btn {
+    background-color: #ddd;
+
+    color: #333;
+}
+
+
+/* =========================================
+   SOCIAL LINKS
+========================================= */
+
+.social-section {
+    margin-top: 25px;
+
+    margin-bottom: 35px;
+}
+
+
+.social-links {
+    display: flex;
+
+    gap: 15px;
+}
+
+
+.social-links a {
+    width: 34px;
+
+    height: 34px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 3px;
+}
+
+
+/* LinkedIn */
+
+.linkedin {
+    background-color: #1683c5;
+
+    color: white;
+}
+
+
+/* GitHub */
+
+.github {
+    background-color: #111;
+
+    color: white;
+
+    border-radius: 50% !important;
+}
+
+
+/* Google */
+
+.google {
+    color: #db4437;
+
+    background-color: white;
+
+    font-size: 20px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #0b2854;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+    header {
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 5px 12px;
+    }
+
+    .hero-content {
+        width: 90%;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .profile-container {
+        width: 100%;
+
+        margin-top: 20px;
+    }
+
+    .top-section,
+    .bottom-section {
+        grid-template-columns: 1fr;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .main-container {
+        width: 90%;
+    }
+}
